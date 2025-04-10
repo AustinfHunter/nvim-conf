@@ -17,10 +17,10 @@ vim.g.neoformat_try_node_exe = 1
 
 local formatgroup = vim.api.nvim_create_augroup('neoformat', {clear = false})
 vim.api.nvim_create_autocmd({"BufWritePre", "InsertLeave"}, {
-	pattern = {"*.js", "*.jsx", "*.tsx", "*.ts"},
+	pattern = {"*.js", "*.jsx", "*.tsx", "*.ts", "*.astro"},
 	group = formatgroup,
 	command = "Neoformat prettier",
-	desc = "Use Neoformat to automatically format js and ts files using prettier"
+	desc = "Use Neoformat to automatically format js, ts, and astro files using prettier"
 })
 
 vim.api.nvim_create_autocmd({"BufWritePre", "TextChanged", "InsertLeave"}, {

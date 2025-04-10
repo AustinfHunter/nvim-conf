@@ -12,3 +12,5 @@ vim.api.nvim_create_autocmd({"BufWritePre", "TextChanged", "InsertLeave"}, {
 	command = "silent !python -m black --line-length 100 %:p",
 	desc = "Use Neoformat to automatically format python using black"
 })
+
+vim.g.neoformat_only_msg_on_error = 1

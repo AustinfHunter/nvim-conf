@@ -7,6 +7,7 @@ return {
 			gopls = {},
 			pyright = {},
 			rust_analyzer = {},
+			ts_ls = {},
     }
   },
   config = function(_, opts)
