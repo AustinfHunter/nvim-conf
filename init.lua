@@ -29,3 +29,10 @@ vim.api.nvim_create_autocmd({"BufWritePre", "TextChanged", "InsertLeave"}, {
 	command = "silent !python -m black --line-length 100 %:p",
 	desc = "Use Neoformat to automatically format python using black"
 })
+
+vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
+  pattern = "*.wgsl",
+  callback = function()
+    vim.bo.filetype = "wgsl"
+  end,
+})

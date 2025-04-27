@@ -10,7 +10,8 @@ return {
 				'eslint',
 				'html',
 				'gopls',
-				'ruff'
+				'ruff',
+				'wgsl_analyzer'
 			},
 		},
 	},

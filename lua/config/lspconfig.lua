@@ -12,3 +12,4 @@ lspconfig.gopls.setup({
     },
   },
 })
+lspconfig.wgsl_analyzer.setup({})
