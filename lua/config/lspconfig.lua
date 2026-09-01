@@ -30,4 +30,5 @@ return {
 	vim.lsp.enable('prismals'),
 	vim.lsp.enable('html'),
 	vim.lsp.enable('ts_ls'),
+	vim.lsp.enable('tailwindcss'),
 }
