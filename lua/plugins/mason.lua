@@ -1,6 +1,7 @@
 return {
 	{
-		"williamboman/mason.nvim",
+		"mason-org/mason.nvim",
+		version = "^1.0,0",
 		opts = {
 			ensure_installed = {
 				'rust_analyzer',
@@ -15,6 +16,5 @@ return {
 			},
 		},
 	},
-	{'williamboman/mason-lspconfig.nvim'},
-	{'neovim/nvim-lspconfig'},
+	{ "mason-org/mason-lspconfig.nvim", version = "^1.0.0" },
 }

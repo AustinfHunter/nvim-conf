@@ -1,8 +1,8 @@
 require("config.lazy")
 require("lualine").setup()
-require("config.lspconfig")
 require("config.neoformat")
 require("pets").setup()
+require("config.lspconfig")
 
 vim.cmd.colorscheme('tokyonight-night')
 vim.opt.number = true
